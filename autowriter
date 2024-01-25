@@ -1,0 +1,20 @@
+import os
+import time
+
+os.system("cls")
+
+# Input any word here (excluding caps, non-letter-characters, or spaces)
+word = "supercalifragilisticexpialidocious"
+output = ""
+alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+
+for i in word:
+    for j in alphabet:
+        # os.system("cls") --- allows for the word to be printed on one line
+        print(output, end = "")
+        print(j)
+        # time.sleep(0.0002) --- use this if the system is cleared above
+        time.sleep(0.025)
+        if j == i:
+            output = output + j
+            break
